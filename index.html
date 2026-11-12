@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Svärdson Wächter</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+      .press { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin-top: 1rem; }
+      .press a { overflow: hidden; border: 1px solid #e5e5e5; border-radius: 10px; color: inherit; text-decoration: none; transition: box-shadow .2s; }
+      .press a:hover, .press a:focus-visible { box-shadow: 0 4px 18px #0002; }
+      .press img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+      .press span { display: block; padding: 1rem; line-height: 1.45; }
+      .press small { display: block; color: #666; margin-bottom: .5rem; }
+    </style>
   </head>
   <body>
     <section id="bio">
@@ -13,6 +21,25 @@
 
     <section id="projects">
       <h2>Projects</h2>
+      <article class="project">
+        <h3><a href="https://njordtechnology.se/">Njord Technology</a></h3>
+        <p>Co-founded Njord Technology and built its core technology, starting in a garage. I was the sole contributor to the codebase for the first 18 months and made our first technical hires, building the team I now develop alongside.</p>
+        <h4>In the news</h4>
+        <div class="press">
+          <a href="https://www.breakit.se/artikel/45028/superstyrelse-i-par-svardsons-njord-technologies-tung-kvartett-gar-in" lang="sv">
+            <img src="https://cdn.breakit.se/assets/article/0afbf02ed644fd93eaeffdcd1b4383f2.webp" alt="" loading="lazy">
+            <span><small>Breakit · 19 Dec 2025 · Premium</small>Superstyrelse i Pär Svärdsons Njord Technologies – tung kvartett går in</span>
+          </a>
+          <a href="https://www.di.se/nyheter/apotea-grundaren-gar-in-i-hemligt-dronarbolag/" lang="sv">
+            <img src="https://static.bonniernews.se/ba/e5acb021-9f61-4bad-828b-127bcca9cdc1.jpeg?crop=1920%2C1080%2Cx0%2Cy0&amp;auto=webp&amp;width=800&amp;quality=50" alt="" loading="lazy">
+            <span><small>Dagens industri · 14 Oct 2025</small>Apotea-grundaren går in i hemligt drönarbolag</span>
+          </a>
+          <a href="https://www.breakit.se/artikel/44428/apoteagrundaren-par-svardson-nya-satsning-gar-in-i-barnens-hemliga-dronarbolag" lang="sv">
+            <img src="https://cdn.breakit.se/assets/article/4037ddde58ee975b197d56e4ab97817d.webp" alt="" loading="lazy">
+            <span><small>Breakit · 13 Oct 2025 · Premium</small>Apoteagrundaren Pär Svärdson nya satsning – går in i barnens hemliga drönarbolag</span>
+          </a>
+        </div>
+      </article>
     </section>
 
     <section id="interests">
